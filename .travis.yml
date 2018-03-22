@@ -1,18 +1,7 @@
 language: node_js
 
 node_js:
-  - "7.2"
+  - "stable"
 
 script: 
   - node --version
-
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: 5c32b4cb87c93f79f9e24de61a7b20f232743153
-  keep-history: true
-  on:
-    branch: master
-
-git:
-  depth: 3
